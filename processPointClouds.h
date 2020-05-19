@@ -3,6 +3,7 @@
 #ifndef PROCESSPOINTCLOUDS_H_
 #define PROCESSPOINTCLOUDS_H_
 
+#include <unordered_set>
 #include <pcl/io/pcd_io.h>
 #include <pcl/common/common.h>
 #include <pcl/filters/extract_indices.h>
@@ -18,6 +19,8 @@
 #include <ctime>
 #include <chrono>
 #include "render/box.h"
+#include "cluster/kdtree.h"
+
 
 template<typename PointT>
 class ProcessPointClouds {
